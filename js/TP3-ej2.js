@@ -9,8 +9,12 @@ do{
 } while(confirm('desea ingresar otra ciudad?'));
 document.write(`<p>EL arreglo de ciudades tiene ${ciudades.length} elementos</p>`);
 
-//for( let i=0; i<=(ciudades.length); i++){
-//console.log(i)}
+document.write(`<ul>`)
+for( let i=0; i<(ciudades.length); i++){
+
+document.write(`<li>${ciudades[i]}</li>`)
+}
+document.write(`</ul>`);
 
 document.write(`<ul>`);
    
