@@ -10,10 +10,14 @@ document.write(`<p>${suma}</p>`);
 dados.push(suma)}
 
 
-
-const repetido1= dados.filter((numero) => numero===(dados[0]));
+const repetido=[];
+for (x=0; x<50;x++){
+const repetido1= dados.filter((numero) => numero===(dados[x]));
 console.log(`se repite ${repetido1}`);
-document.write(`se repite ${repetido1.length} veces`)
+document.write(`<p>se repite ${repetido1.length}</p>`)
+repetido.push(repetido1);
+
+}
 
 //array.forEach((1) => { 
   //  repetido[1] = (repetido[1] || 0)+1;
